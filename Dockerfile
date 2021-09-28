@@ -14,6 +14,8 @@ RUN adduser --disabled-password \
 COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
+RUN apt update
+RUN apt install -y git make gcc g++
 USER ${NB_USER}
 # RUN python3.7 -m venv env
 # RUN source env/bin/activate
