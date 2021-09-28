@@ -14,6 +14,7 @@ RUN adduser --disabled-password \
 COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
+RUN cat /etc/os-release 
 RUN apt update
 RUN apt install -y git make
 RUN apt install -y g++
