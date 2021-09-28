@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM python:3.7.12-slim
-ARG NB_USER=lambeq
+ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
