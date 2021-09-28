@@ -1,4 +1,0 @@
-#!/bin/bash
-pip install cython numpy
-pip install depccg==1.1.0
-depccg_en download
